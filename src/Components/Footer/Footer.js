@@ -12,16 +12,16 @@ const Footer = () => {
 
         <Row className="py-5">
             
-          <Col xs={12} lg={2}>
-            <div>
+          <Col xs={12} lg={2} className="mb-4 mb-lg-0">
+            <div className="mb-3 mb-lg-0">
                 <img src={logo} height={100} alt="Ms Segurança" />
             </div>
           </Col>
 
-          <Col xs={12} lg={3}>
+          <Col xs={12} lg={3} className="mb-2 mb-lg-0">
           <Row>
 
-            <Col xs={12} lg={3}>
+            <Col xs={12} lg={3} className="mb-3 mb-lg-0">
                 <img src={email} height={50} alt="E-mail"/>
             </Col>
             <Col xs={12} lg={9}>
@@ -40,10 +40,10 @@ const Footer = () => {
           </Row>
           </Col>
 
-           <Col xs={12} lg={3}>
+           <Col xs={12} lg={3} className="mb-2 mb-lg-0">
           <Row>
 
-            <Col xs={12} lg={3}>
+            <Col xs={12} lg={3} className="mb-3 mb-lg-0">
                 <img src={whatsapp} height={60} alt="WhatsApp"/>
             </Col>
             <Col xs={12} lg={9}>
@@ -65,10 +65,10 @@ const Footer = () => {
           </Row>
           </Col>
 
-           <Col xs={12} lg={3}>
+           <Col xs={12} lg={3} className="mb-2 mb-lg-0">
           <Row>
 
-            <Col xs={12} lg={3}>
+            <Col xs={12} lg={3} className="mb-3 mb-lg-0">
                 <img src={instagram} height={60} alt="E-mail"/>
             </Col>
             <Col xs={12} lg={9}>
@@ -93,7 +93,10 @@ const Footer = () => {
         <Row>
             <div className="d-flex justify-content-center text-light footer_copy">
 
-            <h6>© 2025 Anilox Design. Todos os direitos reservados.</h6>
+            
+             <a className="nav_link" href='https://www.aniloxdesign.com.br'>    
+                    <h6>© 2025 Anilox Design. Todos os direitos reservados.</h6>
+                     </a>
             </div>
         </Row>
       </Container>

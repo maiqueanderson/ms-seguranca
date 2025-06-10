@@ -1,3 +1,15 @@
-# https://www.robotstxt.org/robotstxt.html
+# Para mais informações sobre o formato robots.txt, visite: https://www.robotstxt.org/robotstxt.html
+
+# Permite que todos os crawlers acessem todo o site por padrão
 User-agent: *
 Disallow:
+
+# Indique a localização do seu Sitemap.xml para ajudar os motores de busca a descobrir suas páginas.
+# Substitua "https://www.msseguranca.com.br" pelo seu domínio real.
+Sitemap: https://www.msseguranca.com.br/sitemap.xml
+
+# Exemplos de regras Disallow (descomente e adapte se precisar bloquear algo):
+# Disallow: /admin/
+# Disallow: /dashboard/
+# Disallow: /arquivos-privados/
+# Disallow: /teste/

@@ -1,0 +1,71 @@
+/* Home.css */
+
+.Cards {
+
+    position: relative; 
+    z-index: 3; 
+    margin-top: -100px; 
+
+    padding-bottom: 50px;
+
+}
+
+
+
+.CardInfo h4 {
+    color: var(--ms-color-primary); 
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.CardInfo h3 {
+    color: var(--ms-color-primary);
+    font-family: var(--ms-font-primary);
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.CardInfo span {
+    font-weight: 500;
+ 
+}
+
+.cardHover:hover{
+    background-color: var(--ms-color-secondary);
+   
+    transition: 0.5s;
+     transform: scale(1.05);
+}
+
+
+.QuemSomos img {
+    width: 100%; /* Garante que a imagem seja responsiva */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 20px;
+}
+
+.QuemSomos h5{
+    color: var(--ms-color-primary);
+    font-family: var(--ms-font-primary);
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.QuemSomos p{
+    
+    font-family: var(--ms-font-secondary);
+    max-width: 90%;
+    color: var(--ms-color-third);
+}
+
+/* --- Responsividade --- */
+@media (max-width: 991.98px) { /* Tablet e Mobile */
+  
+ .QuemSomos p{
+
+    max-width: 100%;
+}
+
+}

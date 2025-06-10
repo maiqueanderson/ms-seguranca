@@ -20,3 +20,11 @@
     font-family: var(--ms-font-primary);
     font-size: 1.2rem;
 }
+
+/* --- Responsividade --- */
+@media (max-width: 991.98px) { /* Tablet e Mobile */
+  .footer{
+
+    text-align: center;
+  }
+}
