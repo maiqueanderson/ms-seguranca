@@ -1,0 +1,15 @@
+.Nav{
+    background-color: var(--ms-color-primary);
+    font-family: var(--ms-font-secondary);
+}
+
+.nav_link{
+   
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav_link:hover{
+    color: var(--ms-color-secondary);
+}
+

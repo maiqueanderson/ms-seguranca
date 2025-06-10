@@ -1,0 +1,22 @@
+.footer{
+    background-color: var(--ms-color-primary) ;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.footer_copy{
+    font-family: Roboto;
+    color: #fff;
+}
+
+.footer h4{
+    color: var(--ms-color-secondary);
+    font-family: var(--ms-font-primary);
+    font-weight: 700;
+}
+
+.footer p{
+    font-family: var(--ms-font-primary);
+    font-size: 1.2rem;
+}
