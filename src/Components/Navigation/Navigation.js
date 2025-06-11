@@ -15,7 +15,7 @@ const Navigation = () =>{
       <Container>
         <Navbar.Brand className="my-3 mx-5">
         <Link to='./'>
-        <img src={logo} height={50} className='d-inline-block align-top' alt='Ms Segurança' />
+        <img src={logo} height={50} className='d-inline-block align-top logonav' alt='Ms Segurança' />
         </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
