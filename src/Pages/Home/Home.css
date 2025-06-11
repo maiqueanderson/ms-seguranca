@@ -71,19 +71,6 @@
     transform: translateY(0); /* Move para a posição final */
 }
 
-.ParaQuem img{
-    max-width: 100%;
-    height: auto;
-    opacity: 0; 
-    transform: translateY(50px); 
-    transition: opacity 1s ease-out, transform 0.8s ease-out; 
-   
-}
-
-.ParaQuem img.animate-in {
-    opacity: 1; 
-    transform: translateY(0);
-}
 
 .ParaQuem h4{
     font-family: var(--ms-font-primary);
@@ -179,9 +166,7 @@
         transform: translateY(30px); /* Distância menor no mobile */
     }
 
-.ParaQuem img {
-        transform: translateY(30px); /* Distância menor no mobile */
-    }    
+
 
     .ParaQuem span{
    font-size: 2rem;

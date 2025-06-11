@@ -9,7 +9,8 @@ const HomeHero = () => {
                 <h1 hidden>MS Segurança Inteligência Virtual</h1>
 
                 <Row className="my-5">
-                    <Col>
+                    {/* Aplica classes de centralização na Col que contém os textos e o botão */}
+                    <Col xs={12} className="text-center text-lg-start"> {/* Centraliza texto no mobile, alinha à esquerda no desktop */}
 
                         <Row>
                             <h1>Segurança Eletrônica</h1>
@@ -18,7 +19,8 @@ const HomeHero = () => {
                             <h2>Tradição e inovação em proteção para Salvador e região</h2>
                         </Row>
                         <Row className="my-2">
-                            <Col > 
+                            {/* A Col interna do parágrafo para ter a mesma centralização */}
+                            <Col className="text-center text-lg-start"> 
                                 <p>
                                     Desde 2005, a expertise que garante tranquilidade
                                     para condomínios, empresas e residências.
@@ -26,12 +28,15 @@ const HomeHero = () => {
                             </Col>
                         </Row>
                         <Row>
-                            {/* Botão de chamada para ação */}
-                            <Col>
+                            {/* Para centralizar o botão, a Col é um flex container no mobile */}
+                            <Col className="d-flex justify-content-center justify-content-lg-start">
+                             <a href="https://wa.me/5571999284952" target="_blank" rel="noopener noreferrer"> 
                                 <Button variant="warning">Solicite uma cotação</Button>
+                                </a>
                             </Col>
                         </Row>
                     </Col>
+       
                     <Col>
                     </Col>
                 </Row>

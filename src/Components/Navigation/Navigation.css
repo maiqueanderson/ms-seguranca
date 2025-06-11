@@ -1,25 +1,125 @@
-.Nav{
-    background-color: var(--ms-color-primary);
-    font-family: var(--ms-font-secondary);
+/* Navigation.css */
+
+.Nav {
+    background-color: transparent; /* Cor padrão transparente */
+    font-family: var(--ms-font-heading);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+    
+    /* Propriedade para controle de visibilidade */
+    transform: translateY(0); /* Estado inicial: visível */
+    
+    /* Transições para todas as propriedades animadas */
+    transition: background-color 0.3s ease-in-out, /* Cor de fundo */
+                padding 0.3s ease-in-out,         /* Padding vertical */
+                transform 0.3s ease-in-out;       /* Efeito de esconder/mostrar */
 }
 
-.nav_link{
-   
+/* Classe para esconder a navegação (move para cima para fora da tela) */
+.Nav.hidden-nav {
+    transform: translateY(-100%); /* Move a navbar completamente para cima, escondendo-a */
+}
+
+/* Estilos quando a navegação é rolada (scrolled-nav) */
+.Nav.scrolled-nav {
+    background-color: var(--ms-color-primary); /* Fundo azul quando rolado */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Ajustes de padding para o Container (controla a altura da Navbar) */
+.navbar-custom-padding {
+    padding-top: 1rem; /* Padding vertical inicial */
+    padding-bottom: 1rem;
+    transition: padding 0.3s ease-in-out;
+}
+
+.Nav.scrolled-nav .navbar-custom-padding {
+    padding-top: 0.5rem; /* Padding menor quando rolado */
+    padding-bottom: 0.5rem;
+}
+
+/* Estilos para o logo */
+.navbar-logo {
+    height: 50px; /* Altura inicial */
+    transition: height 0.3s ease-in-out;
+}
+
+.Nav.scrolled-nav .navbar-logo {
+    height: 35px; /* Altura menor quando rolado */
+}
+
+/* Estilos para os ícones sociais */
+.social-icon {
+    height: 27px; /* Altura inicial */
+    transition: height 0.3s ease-in-out;
+}
+
+.Nav.scrolled-nav .social-icon {
+    height: 20px; /* Altura menor quando rolado */
+}
+
+/* Estilos para os links de navegação */
+.nav_link {
     text-decoration: none;
     color: #ffffff;
+    font-size: 1rem; /* Tamanho da fonte padrão */
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
 }
 
-.nav_link:hover{
+.nav_link:hover {
     color: var(--ms-color-secondary);
 }
 
+.Nav.scrolled-nav .nav_link {
+    font-size: 0.9rem; /* Fonte menor quando rolado */
+    color: white; 
+}
 
+.Nav.scrolled-nav .nav_link:hover {
 
-/* --- Responsividade --- */
+    color: var(--ms-color-secondary)
+}
+
+/* --- Responsividade (Media Queries) --- */
+
 @media (max-width: 991.98px) { /* Tablet e Mobile */
-  
-    .logonav{
-        max-height: 30px;
+    /* A classe hidden-nav funciona aqui também */
+    .Nav.scrolled-nav {
+        width: 100%;
+        left: 0;
+        transform: translateX(0);
     }
 
+    .Nav.scrolled-nav .navbar-custom-padding {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .Nav.scrolled-nav .navbar-logo {
+        height: 30px; 
+    }
+
+    .Nav.scrolled-nav .social-icon {
+        height: 18px; 
+    }
+
+    .Nav.scrolled-nav .nav_link {
+        font-size: 0.85rem; 
+    }
+
+    .navbar-custom-padding {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+    .navbar-logo {
+        height: 40px;
+    }
+    .social-icon {
+        height: 22px;
+    }
+    .nav_link {
+        font-size: 0.95rem;
+    }
 }

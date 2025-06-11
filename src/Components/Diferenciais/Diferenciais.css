@@ -1,0 +1,138 @@
+/* Diferenciais.css */
+
+/* --- Estilos Gerais da Seção --- */
+.diferenciais {
+    text-align: center; /* Centraliza o título "Alguns Diferenciais" */
+    padding-bottom: 5rem; /* Espaço na parte inferior da seção */
+}
+
+.diferenciais h4 {
+    font-family: var(--ms-font-primary);
+    color: var(--ms-color-secondary); 
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600; 
+}
+
+/* --- Estilos dos Cards (Gerais) --- */
+
+/* Contêiner principal do flip */
+.flip-card {
+    background-color: transparent;
+    width: 100%; /* Ocupa a largura total da coluna */
+    height: 350px; /* Definido para manter a altura fixa */
+    perspective: 1000px; /* Dá um efeito 3D ao virar */
+    cursor: pointer; /* Indica que é interativo */
+}
+
+/* O "lado" que vira */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s; /* Duração e suavidade da animação de virada */
+    transform-style: preserve-3d; /* Importante para o 3D */
+}
+
+/* Quando o mouse está sobre o contêiner principal, vira o "inner" */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* --- Estilos para Frente e Verso do Card (baseados em .CardsD) --- */
+
+/* Propriedades comuns para a frente e o verso do card */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Esconde o lado oposto durante a rotação */
+    backface-visibility: hidden; /* Standard property */
+    display: flex; /* Para centralizar o conteúdo verticalmente */
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    align-items: center; /* Centraliza horizontalmente o conteúdo */
+    padding: 2rem; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-height: 350px; /* Mantém a altura máxima em .CardsD */
+}
+
+/* Estilos para o ícone no Card (h6 dentro do Card.Body) */
+.diferenciais h6 {
+    color: var(--ms-color-secondary); 
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilos para o título do Card (h3 dentro do Card.Body) */
+.diferenciais h3 {
+    font-family: var(--ms-font-primary); 
+    font-weight: 400; 
+    font-size: 2rem; 
+    margin-bottom: 0.5rem;
+    color: var(--ms-color-primary);
+}
+
+.diferenciais h2 {
+    font-family: var(--ms-font-primary); 
+    font-weight: 400;
+    font-size: 2rem; 
+    margin-bottom: 0.5rem;
+   
+}
+
+/* Estilos para o parágrafo do Card (p dentro do Card.Body) */
+.Pfront {
+    font-family: var(--ms-font-primary); 
+    color: var(--ms-color-third);
+    font-size: 0.9rem; 
+    line-height: 1.5;
+}
+
+.pBack{
+    font-family: var(--ms-font-primary); 
+    font-size: 0.9rem; 
+    line-height: 1.5; 
+}
+
+/* Estilos específicos da frente do card */
+.flip-card-front {
+    background-color: white; 
+    color: black; 
+    z-index: 2; 
+}
+
+/* Estilos específicos do verso do card */
+.flip-card-back {
+    background-color: var(--ms-color-primary); 
+    color: white;
+    transform: rotateY(180deg); 
+    z-index: 1; 
+}
+
+/* --- Responsividade (Exemplo) --- */
+@media (max-width: 991.98px) { /* Tablet e Mobile */
+    .flip-card {
+        height: 300px; /* Altura um pouco menor no mobile */
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        padding: 1.5rem; /* Reduz o padding em telas menores */
+    }
+
+    .diferenciais h6 {
+        font-size: 3rem; /* Ajusta o tamanho do ícone no mobile */
+    }
+
+    .diferenciais h3 {
+        font-size: 1.5rem; /* Ajusta o tamanho do título no mobile */
+    }
+
+    .diferenciais p {
+        font-size: 0.8rem; /* Ajusta o tamanho do parágrafo no mobile */
+    }
+}

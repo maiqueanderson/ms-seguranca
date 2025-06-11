@@ -1,16 +1,16 @@
 import React from 'react'; // Importe React
 import { Col, Row, Card, Container } from 'react-bootstrap';
 import Hero from '../../Components/HomeHero/HomeHero';
+import Diferenciais from '../../Components/Diferenciais/Diferenciais';
+import PreFooter from '../../Components/PreFooter/PreFooter';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faIndustry,
   faBuildingShield,
   faHouseLock,
-  // faShieldHalved,
   faLightbulb,
   faTowerBroadcast,
-  // faVideo,
   faPhone,
   faBolt,
   faPlugCircleBolt,
@@ -18,10 +18,6 @@ import {
   faDroplet,
   faFingerprint,
   faHouseFire,
-  // faUsersGear,
-  // faPenToSquare,
-  // faHeadset,
-  // faStore,
   faCamera
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -83,8 +79,8 @@ function Home() {
         <div className='QuemSomos py-5'>
           <Row>
             <Col xs={12} lg={6}>
-              <Row><h5>Quem Somos?</h5></Row>
-              <Row><p>
+              <Row><h5 className="text-center text-lg-start mb-5 mb-lg-0">Quem Somos?</h5></Row>
+              <Row><p className='mb-5 mb-lg-0'>
                 Na MS Segurança, unimos a tradição de quem está no mercado desde 2005 com a constante inovação na área de segurança eletrônica em Salvador e Região. Nossa missão é ir além, buscando incessantemente as mais novas tecnologias e soluções, seja em sistemas de câmeras digitais de última geração, automação de portões, centrais de interfone, ou manutenção de equipamentos essenciais. Com essa vasta experiência e compromisso com a qualidade, garantimos a proteção e a tranquilidade que você e seu patrimônio merecem.
               </p></Row>
             </Col>
@@ -103,28 +99,27 @@ function Home() {
           </Row>
         </div>
 
-        <div className='ParaQuem my-5'>
+        <div className='ParaQuem mt-5'>
           <Row>
-            <Col xs={12} lg={6} className='d-none d-lg-flex'>
+            <Col xs={12} lg={8} className='d-none d-lg-flex'>
               <img
-                ref={imgRef} // Anexa a ref do Intersection Observer
-                className={imgInView ? 'animate-in' : ''} // Adiciona a classe 'animate-in' quando visível
+                
                 src={paraquem}
                 alt='MS Segurança funcionário'
               />
             </Col>
 
-            <Col xs={12} lg={4} className='mb-4 mb-lg-0'>
+            <Col xs={12} lg={4} className=' text-center text-lg-start'>
               <Row>
                 <h4>Soluções completas<br />para o seu patrimônio</h4>
               </Row>
               <Row className='my-4'>
-                <h6 className='py-4 py-lg-0'><span><FontAwesomeIcon icon={faIndustry} /></span> INDÚSTRIA E COMÉRCIO</h6>
+                <h6 className='py-4 py-lg-0 text-center text-lg-start'><span><FontAwesomeIcon icon={faIndustry} /></span> INDÚSTRIA E COMÉRCIO</h6>
                 <p>
                   a MS Segurança oferece soluções que protegem seu patrimônio, otimizam o fluxo de trabalho e minimizam riscos. Câmeras avançadas, controle de acesso e automação de portões garantem segurança e eficiência nas suas operações.
                 </p>
 
-                <h6 className='py-4 py-lg-0'><span><FontAwesomeIcon icon={faBuildingShield} /></span> CONDOMÍNIOS</h6>
+                <h6 className='py-4 py-lg-0 text-center text-lg-start'><span><FontAwesomeIcon icon={faBuildingShield} /></span> CONDOMÍNIOS</h6>
                 <p>
                   a MS Segurança eleva a segurança e organização. Com interfonia, controle de acesso inteligente, CFTV digital e automação de portões, criamos um ambiente mais seguro e tranquilo para todos os moradores e a gestão.
                 </p>
@@ -247,6 +242,9 @@ function Home() {
           </Row>
         </Container>
       </div>
+
+      <Diferenciais/>
+      <PreFooter/>
 
     </>
   );
