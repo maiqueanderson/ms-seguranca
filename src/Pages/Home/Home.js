@@ -18,7 +18,10 @@ import {
   faDroplet,
   faFingerprint,
   faHouseFire,
-  faCamera
+  faCamera,
+  faUsersGear,
+  faPenToSquare,
+  faHeadset
 } from "@fortawesome/free-solid-svg-icons";
 
 import quemsomos from '../../Assets/home/quemsomos.jpg';
@@ -103,7 +106,7 @@ function Home() {
           <Row>
             <Col xs={12} lg={8} className='d-none d-lg-flex'>
               <img
-                
+
                 src={paraquem}
                 alt='MS Segurança funcionário'
               />
@@ -243,8 +246,45 @@ function Home() {
         </Container>
       </div>
 
-      <Diferenciais/>
-      <PreFooter/>
+      <Diferenciais
+        titulo='Alguns Diferenciais'
+
+        FrontTitulo1='EXPERIÊNCIA'
+        icon1={<FontAwesomeIcon icon={faUsersGear} />}
+        BackTitulo1='Nossa História'
+        FrontParag1='Desde 2005, construímos uma sólida
+                     história no mercado de
+                     segurança eletrônica'
+        BackParag1='Mais de 18 anos de dedicação e segurança.
+                    Conte com a nossa expertise!'  
+        
+        FrontTitulo2='INOVAÇÃO'
+        icon2={<FontAwesomeIcon icon={faLightbulb} />}
+        BackTitulo2='Tecnologia'
+        FrontParag2='Estamos sempre atualizados com as
+                                                últimas tecnologias para oferecer
+                                                as soluções mais modernas.'
+        BackParag2='Sempre buscando as melhores soluções
+                                                para a sua segurança!'             
+
+        FrontTitulo3='SOB MEDIDA'
+        icon3={<FontAwesomeIcon icon={faPenToSquare} />}
+        BackTitulo3='Projetos Únicos'
+        FrontParag3='Criamos projetos de segurança sob
+                                                medida para atender as necessidades
+                                                específicas de cada cliente.'
+        BackParag3='Sua segurança personalizada para o seu perfil e necessidades.'  
+        
+        FrontTitulo4='SUPORTE'
+        icon4={<FontAwesomeIcon icon={faHeadset} />}
+        BackTitulo4='Atendimento 24h'
+        FrontParag4='Garantimos o funcionamento contínuo
+                                                dos seus equipamentos com visitas
+                                                regulares e equipe especializada.'
+        BackParag4='Equipe pronta para te auxiliar sempre que precisar.' 
+
+      />
+      <PreFooter />
 
     </>
   );

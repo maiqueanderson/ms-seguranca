@@ -1,19 +1,35 @@
 import { Col, Container, Row, Card, Button } from "react-bootstrap";
 import './Diferenciais.css'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faLightbulb,
-    faUsersGear,
-    faPenToSquare,
-    faHeadset,
-} from "@fortawesome/free-solid-svg-icons";
 
-const Diferenciais = () => {
+
+const Diferenciais = ({
+    titulo,
+    FrontTitulo1,
+    FrontTitulo2,
+    FrontTitulo3,
+    FrontTitulo4,
+    BackTitulo1,
+    BackTitulo2,
+    BackTitulo3,
+    BackTitulo4,
+    FrontParag1,
+    FrontParag2,
+    FrontParag3,
+    FrontParag4,
+    BackParag1,
+    BackParag2,
+    BackParag3,
+    BackParag4,
+    icon1,
+    icon2,
+    icon3,
+    icon4
+     }) => {
     return (
         <>
             <Container>
                 <div className="diferenciais pt-5">
-                    <h4 className="my-5">Alguns Diferenciais</h4>
+                    <h4 className="my-5">{titulo}</h4>
                     <Row>
 
                         {/* Card de Experiência */}
@@ -25,27 +41,24 @@ const Diferenciais = () => {
                                     {/* Frente do Card */}
                                     <div className="flip-card-front p-5 CardsD"> {/* classe de modificação */}
                                         <Card.Body className=''>
-                                            <h6><FontAwesomeIcon icon={faUsersGear} /></h6>
-                                            <h3>EXPERIÊNCIA</h3>
+                                            <h6>{icon1}</h6>
+                                            <h3>{FrontTitulo1}</h3>
                                             <p className="Pfront">
-                                                Desde 2005, construímos uma sólida
-                                                história no mercado de
-                                                segurança eletrônica
+                                                {FrontParag1}
                                             </p>
                                         </Card.Body>
                                     </div>
                                     {/* Verso do Card */}
-                                    <div className="flip-card-back p-5 CardsD"> 
+                                    <div className="flip-card-back p-5 CardsD">
                                         <Card.Body className=''>
-                                            <h6><FontAwesomeIcon icon={faUsersGear} /></h6> 
-                                            <h2>Nossa História</h2>
+                                            <h6>{icon1}</h6>
+                                            <h2>{BackTitulo1}</h2>
                                             <p className="pBack">
-                                                Mais de 18 anos de dedicação e segurança.
-                                                Conte com a nossa expertise!
+                                                {BackParag1}
                                             </p>
-                                            <a href="https://wa.me/5571999284952" target="blank"> 
-                                            
-                                            <Button variant="warning">Solicite uma cotação</Button>
+                                            <a href="https://wa.me/5571999284952" target="blank">
+
+                                                <Button variant="warning">Solicite uma cotação</Button>
                                             </a>
                                         </Card.Body>
                                     </div>
@@ -59,26 +72,23 @@ const Diferenciais = () => {
                                 <div className="flip-card-inner">
                                     <div className="flip-card-front p-5 CardsD">
                                         <Card.Body className=''>
-                                            <h6><FontAwesomeIcon icon={faLightbulb} /></h6>
-                                            <h3>INOVAÇÃO</h3>
+                                            <h6>{icon2}</h6>
+                                            <h3>{FrontTitulo2}</h3>
                                             <p className="Pfront">
-                                                Estamos sempre atualizados com as
-                                                últimas tecnologias para oferecer
-                                                as soluções mais modernas.
+                                                {FrontParag2}
                                             </p>
                                         </Card.Body>
                                     </div>
                                     <div className="flip-card-back p-5 CardsD">
                                         <Card.Body className=''>
-                                            <h6><FontAwesomeIcon icon={faLightbulb} /></h6>
-                                            <h2>Tecnologia</h2>
+                                            <h6>{icon2}</h6>
+                                            <h2>{BackTitulo2}</h2>
                                             <p className="pBack">
-                                                Sempre buscando as melhores soluções
-                                                para a sua segurança!
+                                                {BackParag2}
                                             </p>
-                                            <a href="https://wa.me/5571999284952" target="blank"> 
-                                            
-                                            <Button variant="warning">Solicite uma cotação</Button>
+                                            <a href="https://wa.me/5571999284952" target="blank">
+
+                                                <Button variant="warning">Solicite uma cotação</Button>
                                             </a>
                                         </Card.Body>
                                     </div>
@@ -92,25 +102,23 @@ const Diferenciais = () => {
                                 <div className="flip-card-inner">
                                     <div className="flip-card-front p-5 CardsD">
                                         <Card.Body className=''>
-                                            <h6><FontAwesomeIcon icon={faPenToSquare} /></h6>
-                                            <h3>SOB MEDIDA</h3>
+                                            <h6>{icon3}</h6>
+                                            <h3>{FrontTitulo3}</h3>
                                             <p className="Pfront">
-                                                Criamos projetos de segurança sob
-                                                medida para atender as necessidades
-                                                específicas de cada cliente.
+                                               {FrontParag3}
                                             </p>
                                         </Card.Body>
                                     </div>
                                     <div className="flip-card-back p-5 CardsD">
                                         <Card.Body className=''>
-                                            <h6><FontAwesomeIcon icon={faPenToSquare} /></h6>
-                                            <h2>Projetos Únicos</h2>
-                                             <p className="pBack">
-                                                Sua segurança personalizada para o seu perfil e necessidades.
+                                            <h6>{icon3}</h6>
+                                            <h2>{BackTitulo3}</h2>
+                                            <p className="pBack">
+                                                {BackParag3}
                                             </p>
-                                            <a href="https://wa.me/5571999284952" target="blank"> 
-                                            
-                                            <Button variant="warning">Solicite uma cotação</Button>
+                                            <a href="https://wa.me/5571999284952" target="blank">
+
+                                                <Button variant="warning">Solicite uma cotação</Button>
                                             </a>
                                         </Card.Body>
                                     </div>
@@ -124,25 +132,23 @@ const Diferenciais = () => {
                                 <div className="flip-card-inner">
                                     <div className="flip-card-front p-5 CardsD">
                                         <Card.Body className=''>
-                                            <h6><FontAwesomeIcon icon={faHeadset} /></h6>
-                                            <h3>SUPORTE</h3>
-                                           <p className="Pfront">
-                                                Garantimos o funcionamento contínuo
-                                                dos seus equipamentos com visitas
-                                                regulares e equipe especializada.
+                                            <h6>{icon4}</h6>
+                                            <h3>{FrontTitulo4}</h3>
+                                            <p className="Pfront">
+                                                {FrontParag4}
                                             </p>
                                         </Card.Body>
                                     </div>
                                     <div className="flip-card-back p-5 CardsD">
                                         <Card.Body className=''>
-                                            <h6><FontAwesomeIcon icon={faHeadset} /></h6>
-                                            <h2>Atendimento 24h</h2>
-                                             <p className="pBack">
-                                                Equipe pronta para te auxiliar sempre que precisar.
+                                            <h6>{icon4}</h6>
+                                            <h2>{BackTitulo4}</h2>
+                                            <p className="pBack">
+                                                {BackParag4}
                                             </p>
-                                            <a href="https://wa.me/5571999284952" target="blank"> 
-                                            
-                                            <Button variant="warning">Solicite uma cotação</Button>
+                                            <a href="https://wa.me/5571999284952" target="blank">
+
+                                                <Button variant="warning">Solicite uma cotação</Button>
                                             </a>
                                         </Card.Body>
                                     </div>
