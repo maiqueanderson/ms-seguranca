@@ -1,0 +1,31 @@
+.Form{
+    padding: 0 200px;
+}
+
+.ContactForm h3{
+    font-family: var(--ms-font-primary);
+    color: var(--ms-color-primary);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.ContactForm p{
+    font-family: var(--ms-font-primary);
+    color: var(--ms-color-third);
+    text-align: center;
+    padding: 0 300px;
+    font-weight: 300;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 991.98px) { /* Tablet e Mobile */
+
+.Form{
+    padding: 0;
+}
+.ContactForm p{
+
+    padding: 0;
+}
+
+}

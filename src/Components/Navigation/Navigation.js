@@ -86,8 +86,9 @@ const Navigation = () => {
                     >
                         <Link className="mx-3 nav_link" to='./servicos' >Serviços</Link>
                         <Link className="mx-3 nav_link" to='./ServicesPage' >Clientes</Link>
-                        <Link className="mx-3 nav_link" to='./Cases' >Sobre</Link>
-                        <a className="mx-3 nav_link" href='mailto:contato@msseguranca.com.br'>Contato</a>
+                        <Link className="mx-3 nav_link" to='./sobre' >Sobre</Link>
+                        <Link className="mx-3 nav_link" to='./contato' >Contato</Link>
+                        
                     </Nav>
                     
                     <Nav>

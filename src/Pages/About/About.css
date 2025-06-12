@@ -1,16 +1,16 @@
-.ServiceCardHero img{
+.AboutCardHero img{
     width: 100%;
     height: auto;
     border-radius: 20px;
 }
 
-.ServiceCardHero h2{
+.AboutCardHero h2{
     font-family: var(--ms-font-primary);
     color: var(--ms-color-primary);
     font-size: 3rem;
 }
 
-.ServiceCardHero p{
+.AboutCardHero p{
     font-family: var(--ms-font-primary);
     color: var(--ms-color-third);
     font-size: 1.4rem;
@@ -18,25 +18,21 @@
     font-weight: 300;
 }
 
-.btnService{
-    text-decoration: none;
-}
-
-.MSsolucoes h3{
+.MSsobre h3{
     font-family: var(--ms-font-primary);
     color: var(--ms-color-primary);
     font-size: 1.5rem;
     text-align: center;
 }
 
-.MSsolucoes h4{
+.MSsobre h4{
     font-family: var(--ms-font-primary);
     color: var(--ms-color-secondary);
     font-size: 3rem;
     text-align: center;
 }
 
-.MSsolucoes p{
+.MSsobre p{
     font-family: var(--ms-font-primary);
     color: var(--ms-color-third);
     font-size: 1.4rem;
@@ -45,93 +41,56 @@
     font-weight: 300;
 }
 
-.ServicesOp1{
-    background-color: #f4f3f3;
+.Missao{
+    background-color: var(--ms-color-primary);
     width: 100%;
     margin-top: 5rem;
     display: flex;
     flex-direction: column; 
 }
 
-.ServicesOp1 h5{
+.Missao h4{
     font-family: var(--ms-font-primary);
-    color: var(--ms-color-primary);
+    color: var(--ms-color-secondary);
     font-size: 3rem;
 }
 
-.ServicesOp1 p{
+.Missao p{
     font-family: var(--ms-font-primary);
-    color: var(--ms-color-third);
-    font-size: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
     font-weight: 300;
+    padding: 0 100px 0 0;
 }
 
-.ServicesOp1 img{
-    width: 90%;
-    height: auto;
-    border-radius: 15px;
-}
-
-.ServicesOp2{
-    
-    width: 100%;
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column; 
-}
-
-.ServicesOp2 h5{
-    font-family: var(--ms-font-primary);
-    color: var(--ms-color-primary);
-    font-size: 3rem;
-}
-
-.ServicesOp2 p{
-    font-family: var(--ms-font-primary);
-    color: var(--ms-color-third);
-    font-size: 1rem;
-    font-weight: 300;
-}
-
-.ServicesOp2 img{
-    width: 90%;
-    height: auto;
-    border-radius: 15px;
+.Missao img{
+   width: 100%;
+   height: auto;
 }
 
 
 /* --- Responsividade --- */
 @media (max-width: 991.98px) { /* Tablet e Mobile */
 
-    .ServiceCardHero p{
+    .AboutCardHero p{
     font-size: 1rem;
     padding: 0;
 }
 
-.ServiceCardHero h2{
+.AboutCardHero h2{
     text-align: center;
 }
 
-.MSsolucoes p{
+.MSsobre p{
 
     padding: 0;
 }
-
-.ServicesOp1 img{
-    width: 100%;
-}
-
-
-.ServicesOp1 h5{
+.Missao{
     text-align: center;
 }
 
-.ServicesOp2 img{
-    width: 100%;
-}
-
-.ServicesOp2 h5{
-    text-align: center;
+.Missao p{
+    padding: 0;
 }
 
 }
