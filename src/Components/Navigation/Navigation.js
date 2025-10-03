@@ -85,7 +85,7 @@ const Navigation = () => {
                         navbarScroll
                     >
                         <Link className="mx-3 nav_link" to='./servicos' >Serviços</Link>
-                        <Link className="mx-3 nav_link" to='./ServicesPage' >Clientes</Link>
+                        {/* <Link className="mx-3 nav_link" to='./ServicesPage' >Clientes</Link> */}
                         <Link className="mx-3 nav_link" to='./sobre' >Sobre</Link>
                         <Link className="mx-3 nav_link" to='./contato' >Contato</Link>
                         
@@ -94,12 +94,12 @@ const Navigation = () => {
                     <Nav>
                         <Row className="d-none d-lg-flex">
                             <Col>
-                                <Link to='https://aniloxdesign.com.br' target='_blank' rel="noopener noreferrer">
+                                <Link to='https://api.whatsapp.com/send/?phone=5571999284952&text&type=phone_number&app_absent=0' target='_blank' rel="noopener noreferrer">
                                     <img src={whatsapp} className='social-icon' alt='WhatsApp'/>
                                 </Link>
                             </Col>
                             <Col>
-                                <Link to='https://aniloxdesign.com.br' target='_blank' rel="noopener noreferrer">
+                                <Link to='https://www.instagram.com/ms.seguranca2008/' target='_blank' rel="noopener noreferrer">
                                     <img src={instagram} className='social-icon' alt='instagram'/>
                                 </Link>
                             </Col>

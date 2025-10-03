@@ -31,8 +31,8 @@ const Footer = () => {
                    
                 </Row>
                 <Row>
-                     <a className="nav_link" href='mailto:contato@msseguranca.com.br'>    
-                    <p>contato@msseguranca.com.br</p>
+                     <a className="nav_link" href='mailto:contato@msseguranca24h.com.br'>    
+                    <p>contato@msseguranca24h.com.br</p>
                      </a>
                 </Row>
             </Col>

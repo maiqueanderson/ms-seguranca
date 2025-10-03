@@ -83,12 +83,12 @@ function Home() {
           <Row>
             <Col xs={12} lg={6}>
               <Row><h5 className="text-center text-lg-start mb-5 mb-lg-0">Quem Somos?</h5></Row>
-              <Row><p className='mb-5 mb-lg-0'>
+              <Row><p className=' my-lg-5'>
                 Na MS Segurança, unimos a tradição de quem está no mercado desde 2005 com a constante inovação na área de segurança eletrônica em Salvador e Região. Nossa missão é ir além, buscando incessantemente as mais novas tecnologias e soluções, seja em sistemas de câmeras digitais de última geração, automação de portões, centrais de interfone, ou manutenção de equipamentos essenciais. Com essa vasta experiência e compromisso com a qualidade, garantimos a proteção e a tranquilidade que você e seu patrimônio merecem.
               </p></Row>
             </Col>
 
-            <Col xs={12} lg={6}>
+            <Col className='mt-5 my-lg-0' xs={12} lg={6}>
               {/* Adiciona a ref ao elemento img e a classe condicional */}
               <img
                 ref={imgRef} // Anexa a ref do Intersection Observer
